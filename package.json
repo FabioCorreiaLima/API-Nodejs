@@ -1,27 +1,20 @@
-
 {
-  "name": "express-api",
+  "name": "api-auth-crud",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "API de Autenticação e CRUD com Node.js, MongoDB e JWT",
+  "main": "src/app.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
     "bcryptjs": "^2.4.3",
-    "dotenv": "^16.4.5",
-    "ejs": "^3.1.9",
-    "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.6.1",
-    "mysql2": "^3.11.0",
-    "nodemailer": "^6.9.14",
-    "pg": "^8.12.0",
-    "pg-hstore": "^2.3.4",
-    "sequelize": "^6.37.3"
+    "cors": "^2.8.5",
+    "zod": "^3.22.4",
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
